@@ -8,14 +8,15 @@
 }
 
 .background{
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-image: linear-gradient(to right, blue, rgb(90, 192, 255));
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   overflow: auto;
+  padding-top: 40px;
 }
 
 .card{
@@ -23,14 +24,17 @@
   width: 180px;
   background-color: white;
   border-radius: 15px;
-  margin: 0 20px;
+  margin: 90px 30px;
   padding: 30px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
+footer{
+  display: flex;
+  justify-content: center;
+}
 .button{
   background-color: rgb(0, 132, 255);
   height: 30px;
@@ -54,6 +58,7 @@
   font-size: x-large;
   font-weight: 600;
   padding-bottom: 10px;
+  color: black;
 }
 .borderLine{
   border-top: 1px solid rgb(225, 225, 225);
@@ -72,6 +77,7 @@ ul{
 }
 .present{
   font-weight: 500;
+  color: black;
 }
 .disabled{
   color: gray;
@@ -81,12 +87,12 @@ ul{
   .background{
     flex-direction: column;
     margin: 0 ;
-    overflow: auto;
-    padding-top: 30px;
+    overflow-y: scroll;
+    padding-top: 60px;
     align-items: center;
   }
   .card{
-    margin: 40px 40px;
+    margin-top: 10px;
     width: 60%;
   }
 }
